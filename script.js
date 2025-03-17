@@ -4,9 +4,9 @@ const button = document.querySelector('button')
 
 function defineParity(num) {
     if (!Number.isInteger(num)) {
-        return NaN
+        return "Нечётное"
     }
-    return num % 2 === 0 ? 'Чётное' : 'Нечётное'
+    return num === 0 ? "Нечётное" : (num % 2 === 0 ? 'Чётное' : 'Нечётное')
 }
 
 button.addEventListener('click', function () {
