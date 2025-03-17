@@ -1,0 +1,63 @@
+@font-face {
+    src: url('benzin.ttf') format('truetype');
+    font-family: 'Benzin';
+}
+
+
+body {
+    font-family: 'Benzin';
+    background-color: #2E2E2E;
+}
+
+
+.field { 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #7e7e7e;
+    padding: 20px;
+    height: 300px;
+}
+
+
+.input-field {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+
+.result {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    background-color: #FFFFFF;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+
+button {
+    display: block;
+    background-color: #444444;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+}
