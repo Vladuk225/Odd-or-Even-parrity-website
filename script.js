@@ -6,7 +6,7 @@ function defineParity(num) {
     if (!Number.isInteger(num)) {
         return "Нечётное"
     }
-    return num === 0 ? "Нечётное" : (num % 2 === 0 ? 'Чётное' : 'Нечётное')
+    return num === 0 ? NaN : (num % 2 === 0 ? 'Чётное' : 'Нечётное')
 }
 
 button.addEventListener('click', function () {
