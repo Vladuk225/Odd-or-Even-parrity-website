@@ -2,21 +2,18 @@ const inputField = document.querySelector('.input-field')
 const result = document.querySelector('.result')
 const button = document.querySelector('button')
 
-
 function defineParity(num) {
-    if (num % 2 == 0) {
-        return 'Чётное'
-    } else {
-        return 'Нечётное'
+    if (!Number.isInteger(num)) {
+        return NaN
     }
+    return num % 2 === 0 ? 'Чётное' : 'Нечётное'
 }
 
-
 button.addEventListener('click', function () {
-    const num = parseInt(inputField.value, 10)
+    let num = parseFloat(inputField.value)
     if (!isNaN(num)) {
         result.textContent = defineParity(num)
-        if (defineParity(num) == 'Чётное') {
+        if (defineParity(num) === 'Чётное') {
             result.style.color = 'green'
         } else {
             result.style.color = 'red'
