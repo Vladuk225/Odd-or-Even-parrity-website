@@ -7,6 +7,7 @@
 body {
     font-family: 'Benzin';
     background-color: #2E2E2E;
+    color: white;
 }
 
 
@@ -51,6 +52,7 @@ body {
 
 
 button {
+    color: white;
     display: block;
     background-color: #444444;
     padding: 10px;
